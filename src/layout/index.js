@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import LeftList from './../components/leftList';
@@ -13,12 +12,12 @@ const drawerWidth = 240;
 
 const styles = theme => ({
   root: {
-    flexGrow: 1,
-    height: 440,
+    // flexGrow: 1,
+    height: '100%',
     zIndex: 1,
     overflow: 'hidden',
     position: 'relative',
-    display: 'flex',
+    // display: 'flex',
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -63,7 +62,6 @@ function ClippedDrawer(props) {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        Hold on, we're going home
       </main>
     </div>
   );
